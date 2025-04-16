@@ -22,7 +22,7 @@ public class UserController {
     }
     @GetMapping
     public List<User> getAllUsers(){
-        log.info("retrieveing all users from DB");
+        log.info("retrieveing all users from DB latest");
         return userRepository.findAll();
     }
     @PostMapping
